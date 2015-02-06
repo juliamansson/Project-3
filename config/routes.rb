@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :cupcake_sections
+
   resources :orders
 
   devise_for :users
