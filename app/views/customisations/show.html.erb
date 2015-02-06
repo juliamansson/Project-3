@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cupcake section:</strong>
+  <%= @customisation.cupcake_section_id %>
+</p>
+
+<p>
+  <strong>Flavour:</strong>
+  <%= @customisation.flavour_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @customisation.order_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customisation.name %>
+</p>
+
+<%= link_to 'Edit', edit_customisation_path(@customisation) %> |
+<%= link_to 'Back', customisations_path %>
