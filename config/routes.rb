@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :flavours
+
   resources :cupcake_sections
 
   resources :orders
