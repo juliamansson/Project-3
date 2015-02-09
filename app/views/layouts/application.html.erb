@@ -9,6 +9,30 @@
 <body>
 
 
+  <img src="http://allaboutuarts.ca/wp-content/uploads/2012/07/placeholder_2.jpg" alt="image placeholder">
+
+  <div class='login'>
+      <% if user_signed_in? %>
+      <%= current_user.email %>
+      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path %>
+        <%= link_to "Register", new_user_registration_path %>
+      <% end %>
+    </div>
+
+  <h1>Project 3</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in, eius illo saepe reiciendis voluptas soluta error libero deserunt architecto sunt. Incidunt libero non voluptatibus, est, mollitia sint fugiat similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, possimus. Repudiandae fugiat repellat ipsum cumque error quidem voluptates iusto magni officiis qui, alias numquam, eos rem quibusdam illum quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quae quasi fugiat cum velit recusandae rem laborum voluptatibus eaque, nam corporis, eum dolor cumque voluptatum eos odit, quidem reiciendis officiis!</p>
+
+  <%=  link_to "Design a Cupcake", new_customisation_path %>
+
+
+
+
+
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
