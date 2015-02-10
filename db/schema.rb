@@ -11,28 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150206155359) do
+ActiveRecord::Schema.define(version: 20150210173516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cupcake_sections", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "customisations", force: true do |t|
-    t.integer  "cupcake_section_id"
-    t.integer  "flavour_id"
-    t.integer  "order_id"
-    t.string   "requests"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "flavours", force: true do |t|
-    t.integer  "cupcake_section_id"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -46,6 +30,9 @@ ActiveRecord::Schema.define(version: 20150206155359) do
     t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "base"
+    t.string   "frosting"
+    t.string   "topping"
   end
 
   create_table "users", force: true do |t|

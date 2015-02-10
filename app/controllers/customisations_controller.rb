@@ -42,6 +42,6 @@ class CustomisationsController < ApplicationController
     end
 
     def customisation_params
-      params.require(:customisation).permit(:cupcake_section_id, :flavour_id, :order_id, :name)
+      params.require(:customisation).permit(:flavour_id, :order_id, :name)
     end
 end

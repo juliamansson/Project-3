@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Project 3</title>
+  <title>Project3</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 </head>
 <body>
-  
+
+
+
+
+
+
+  <h1>Project 3</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in, eius illo saepe reiciendis voluptas soluta error libero deserunt architecto sunt. Incidunt libero non voluptatibus, est, mollitia sint fugiat similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, possimus. Repudiandae fugiat repellat ipsum cumque error quidem voluptates iusto magni officiis qui, alias numquam, eos rem quibusdam illum quaerat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quae quasi fugiat cum velit recusandae rem laborum voluptatibus eaque, nam corporis, eum dolor cumque voluptatum eos odit, quidem reiciendis officiis!</p>
+
+  <%=  link_to "Start designing a cupcake", new_order_path %>
+
+
+
+
+
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+<%= yield %>
+
 </body>
 </html>

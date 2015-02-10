@@ -1,1 +1,1 @@
-json.extract! @flavour, :id, :cupcake_section_id, :name, :created_at, :updated_at
+json.extract! @flavour, :id, :name, :created_at, :updated_at

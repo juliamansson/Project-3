@@ -42,6 +42,6 @@ class FlavoursController < ApplicationController
     end
 
     def flavour_params
-      params.require(:flavour).permit(:cupcake_section_id, :name)
+      params.require(:flavour).permit(:name)
     end
 end

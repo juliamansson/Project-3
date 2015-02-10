@@ -4,11 +4,13 @@ Rails.application.routes.draw do
 
   resources :flavours
 
-  resources :cupcake_sections
-
   resources :orders
 
+  resources :user_steps
+
   devise_for :users
+
+
  
 
   root "home#index"

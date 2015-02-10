@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'wicked'
 gem 'devise'
 gem 'cancancan'
 
