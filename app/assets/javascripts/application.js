@@ -33,11 +33,11 @@ $(function(){
 
 
 
-    $("#image").change(function() {
+    // $("#image").change(function() {
         
 
         
-    });
+    // });
 
 
 

@@ -4,13 +4,13 @@
   <label>
   <%= f.label :base %><br>
   <%#= f.select(:base, Flavour.base.pluck(:name) ) %>
-  <%= f.collection_radio_buttons :base, Flavour.base, :id, :name %>
+  <%= f.collection_radio_buttons :base, Flavour.base, :name, :name %>
   </label>
 
   <div id="imagePreview">
     
 
-    
+
   </div>
   
   
