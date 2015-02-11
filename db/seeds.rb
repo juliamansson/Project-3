@@ -6,4 +6,18 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-flavours = Flavour.create([{name: 'Vanilla'}, {name: 'Chocolate'}, {name: 'Red Velvet'} ])
+Flavour.delete_all
+Order.delete_all
+
+
+flavours = Flavour.create!([
+  {name: 'Vanilla', section: :frosting}, 
+  {name: 'Chocolate', section: :frosting}, 
+  {name: 'Oreo', section: :frosting}, 
+  {name: 'Chocolate', section: :topping}, 
+  {name: 'Sprinkles', section: :topping}, 
+  {name: 'Butterscotch', section: :topping}, 
+  {name: 'Fruit', section: :base}, 
+  {name: 'Victoria Sponge', section: :base}, 
+  {name: 'Red Velvet', section: :base} 
+  ])

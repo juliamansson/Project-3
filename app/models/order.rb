@@ -11,7 +11,7 @@ class Order < ActiveRecord::Base
   end
 
   def steps
-    %w[base frosting topping]
+    %w[base frosting topping show_cupcake]
   end
 
   def next_step

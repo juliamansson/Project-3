@@ -40,7 +40,7 @@ class OrdersController < ApplicationController
       render "new"
     else
       session[:order_step] = session[:order_params] = nil
-      flash[:notice] = "Order saved"
+      flash[:notice] = "Cupcake saved"
       redirect_to @order
     end
   end
