@@ -1,5 +1,5 @@
 <h2>Choose a frosting type</h2>
 <div class="field">
   <%= f.label :frosting %><br>
-  <%= f.select(:frosting, Flavour.frosting.pluck(:name) ) %>
+  <%= f.collection_radio_buttons :frosting, Flavour.frosting, :id, :name %>
 </div>

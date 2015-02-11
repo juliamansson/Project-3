@@ -1,5 +1,5 @@
 <h2>Choose a topping</h2>
 <div class="field">
   <%= f.label :topping %><br>
-  <%= f.select(:topping, Flavour.topping.pluck(:name) ) %>
+  <%= f.collection_radio_buttons :topping, Flavour.topping, :id, :name %>
 </div>

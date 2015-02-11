@@ -11,13 +11,24 @@ Order.delete_all
 
 
 flavours = Flavour.create!([
+  {name: 'Chocolate', section: :base}, 
+  {name: 'Vanilla', section: :base}, 
+  {name: 'Red Velvet', section: :base},
+  {name: 'Banana', section: :base},
+  {name: 'Carrot', section: :base},
+
   {name: 'Vanilla', section: :frosting}, 
   {name: 'Chocolate', section: :frosting}, 
-  {name: 'Oreo', section: :frosting}, 
-  {name: 'Chocolate', section: :topping}, 
+  {name: 'Oreo', section: :frosting},
+  {name: 'Cream Cheese', section: :frosting},
+  {name: 'Peanut Butter', section: :frosting},
+
+
   {name: 'Sprinkles', section: :topping}, 
-  {name: 'Butterscotch', section: :topping}, 
-  {name: 'Fruit', section: :base}, 
-  {name: 'Victoria Sponge', section: :base}, 
-  {name: 'Red Velvet', section: :base} 
+  {name: 'Oreos', section: :topping}, 
+  
+  {name: 'Banana', section: :topping}, 
+  {name: 'Chocolate Chips', section: :topping},
+  {name: 'None', section: :topping},  
+  
   ])

@@ -1,9 +1,13 @@
 <h2>Choose a cake base</h2>
 <div class="field">
+
+  <label>
   <%= f.label :base %><br>
-  <%= f.select(:base, Flavour.base.pluck(:name) ) %>
-
-
+  <%#= f.select(:base, Flavour.base.pluck(:name) ) %>
+  <%= f.collection_radio_buttons :base, Flavour.base, :id, :name %>
+  </label>
+  
+  
   
   
 </div>
