@@ -1,5 +1,5 @@
-<h2>Topping</h2>
+<h2>Choose a topping</h2>
 <div class="field">
   <%= f.label :topping %><br>
-  <%= f.text_field :topping %>
+  <%= f.select(:topping, Flavour.all.map { |c| [c.name] } ) %>
 </div>

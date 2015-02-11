@@ -1,5 +1,5 @@
-<h2>Frosting</h2>
+<h2>Choose a frosting type</h2>
 <div class="field">
   <%= f.label :frosting %><br>
-  <%= f.text_field :frosting %>
+  <%= f.select(:frosting, Flavour.all.map { |c| [c.name] } ) %>
 </div>

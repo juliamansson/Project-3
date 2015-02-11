@@ -1,5 +1,11 @@
-<h2>Cake Base</h2>
+<h2>Choose a cake base</h2>
 <div class="field">
   <%= f.label :base %><br>
-  <%= f.text_field :base %>
+  <%= f.select(:base, Flavour.all.map { |c| [c.name] } ) %>
+
+
+  
+  
 </div>
+
+
