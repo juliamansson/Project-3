@@ -24,7 +24,8 @@ $(function(){
   $('input[type=radio]').change( function() {
      var src = $(this).val();
      console.log(src); 
-     $("#imagePreview").html(src ? "<img src='" + src + "'>" : "");  
+     $("#imagePreview").html("<img src='/assets/" + src + ".png'>");
+
   });
 
 });
