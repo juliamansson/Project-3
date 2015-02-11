@@ -26,7 +26,6 @@ flavours = Flavour.create!([
 
   {name: 'Sprinkles', section: :topping}, 
   {name: 'Oreos', section: :topping}, 
-  
   {name: 'Banana', section: :topping}, 
   {name: 'Chocolate Chips', section: :topping},
   {name: 'None', section: :topping},  

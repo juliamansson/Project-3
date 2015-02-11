@@ -14,3 +14,33 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+
+
+$(function(){
+
+  $('input[type=radio]').change( function() {
+     var src = $(this).val();
+     console.log(src); 
+     $("#imagePreview").html(src ? "<img src='" + src + "'>" : "");  
+  });
+
+});
+
+
+
+
+    $("#image").change(function() {
+        
+
+        
+    });
+
+
+
+
+
+
+
