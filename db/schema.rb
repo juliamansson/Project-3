@@ -11,16 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150211145645) do
+ActiveRecord::Schema.define(version: 20150212144351) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "customisations", force: true do |t|
+    t.integer  "section_id"
+    t.integer  "order_id"
+    t.integer  "flavour_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "customisations", ["flavour_id"], name: "index_customisations_on_flavour_id", using: :btree
+  add_index "customisations", ["order_id"], name: "index_customisations_on_order_id", using: :btree
+  add_index "customisations", ["section_id"], name: "index_customisations_on_section_id", using: :btree
 
   create_table "flavours", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "section"
+    t.integer  "section_id"
   end
 
   create_table "orders", force: true do |t|
@@ -31,9 +43,12 @@ ActiveRecord::Schema.define(version: 20150211145645) do
     t.datetime "date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "base"
-    t.string   "frosting"
-    t.string   "topping"
+  end
+
+  create_table "sections", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
