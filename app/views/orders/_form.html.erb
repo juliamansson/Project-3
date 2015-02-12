@@ -11,12 +11,22 @@
     </div>
   <% end %>
 
+  <%= f.fields_for :customisations do |i| %>
+  <%= i.object.section.try :name %>
+  <%= i.label :flavour_id %>
+  <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name  %>
+<br>
+  <% end %>
 
-  <%= render "#{@order.current_step}", :f => f %>
+
+  <%#= render "#{@order.current_step}", :f => f %>
+  <%#= render 'base', :f => f %>
+  <%#= render 'frosting', :f => f %>
+  <%#= render 'topping', :f => f %>
 
   <div class="actions">
     <p><%= f.submit "Continue" %></p>
-    <p><%= f.submit "Back", :name => "back_button" unless @order.first_step? %></p>
+    <!-- <p><%#= f.submit "Back", :name => "back_button" unless @order.first_step? %></p> -->
   </div>
 
 

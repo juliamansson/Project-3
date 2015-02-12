@@ -11,23 +11,23 @@ Order.delete_all
 
 
 flavours = Flavour.create!([
-  {name: 'Chocolate', section: :base}, 
-  {name: 'Vanilla', section: :base}, 
-  {name: 'Red Velvet', section: :base},
-  {name: 'Banana', section: :base},
-  {name: 'Carrot', section: :base},
+  {name: 'Chocolate', section_id: 1}, 
+  {name: 'Vanilla', section_id: 1}, 
+  {name: 'Red Velvet', section_id: 1},
+  {name: 'Banana', section_id: 1},
+  {name: 'Carrot', section_id: 1},
 
-  {name: 'Vanilla', section: :frosting}, 
-  {name: 'Chocolate', section: :frosting}, 
-  {name: 'Oreo', section: :frosting},
-  {name: 'Cream Cheese', section: :frosting},
-  {name: 'Peanut Butter', section: :frosting},
+  {name: 'Vanilla', section_id: 2}, 
+  {name: 'Chocolate', section_id: 2}, 
+  {name: 'Oreo', section_id: 2},
+  {name: 'Cream Cheese', section_id: 2},
+  {name: 'Peanut Butter', section_id: 2},
 
 
-  {name: 'Sprinkles', section: :topping}, 
-  {name: 'Oreos', section: :topping}, 
-  {name: 'Banana', section: :topping}, 
-  {name: 'Chocolate Chips', section: :topping},
-  {name: 'None', section: :topping},  
+  {name: 'Sprinkles', section_id: 3}, 
+  {name: 'Oreos', section_id: 3}, 
+  {name: 'Banana', section_id: 3}, 
+  {name: 'Chocolate Chips', section_id: 3},
+  {name: 'None', section_id: 3},  
   
   ])

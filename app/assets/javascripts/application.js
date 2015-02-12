@@ -19,22 +19,21 @@
 
 
 
-$(function(){
+// $(function(){
 
-  $('input[type=radio]').change( function() {
-     var src = $(this).val();
-     console.log(src); 
-     $("#imagePreview").html("<img src='/assets/" + src + ".png'>");
+//   $('input[type=radio]').change( function() {
+//      var src = $(this).val();
+//      console.log(src); 
+//      $("#imagePreview").html("<img src='/assets/" + src + ".png'>");
 
-  });
+//   });
 
-});
-
-
+// });
 
 
-    // $("#image").change(function() {
-        
+
+
+
 
         
     // });

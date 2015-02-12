@@ -1,12 +1,12 @@
 class Flavour < ActiveRecord::Base
 
   belongs_to :section
-  
 
-  scope :base,     -> { where section: :base }
-  scope :topping,  -> { where section: :topping }
-  scope :frosting, -> { where section: :frosting }
+
+  scope :base,     -> { joins(:section).where( sections: {name: :Base}) }
+  scope :topping,  -> { joins(:section).where( sections: {name: :Frosting}) }
+  scope :frosting, -> { joins(:section).where( sections: {name: :Topping}) }
   
-  validates :name, uniqueness: { scope: :section }
+  validates :name, uniqueness: { scope: :section_id }
 
 end
