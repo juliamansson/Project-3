@@ -5,6 +5,18 @@ class Order < ActiveRecord::Base
 
   accepts_nested_attributes_for :customisations,allow_destroy: true
 
+  delegate :section, :flavour, to: :customisation, prefix: true, allow_nil: true
+
+
+  def customisation_display(section_name)
+    customisations.send(section_name).map { |customisation| customisation.flavour.name }.to_sentence
+  end
+
+  # def order_section
+  #   customisations.try(:section).try(:name)
+
+  # end
+
 
   # attr_writer :current_step
 

@@ -2,17 +2,19 @@
 Your Cupcake
 <p>
   <strong>Base:</strong>
-  <%= @order.base %>
+  <%= @order.customisation_display(:base) %>
+
+  <%#= @invoice.user.address.full_address.join(', ') %>
 </p>
 
 <p>
   <strong>Frosting:</strong>
-  <%= @order.frosting %>
+  <%= @order.customisation_display(:frosting) %>
 </p>
 
 <p>
   <strong>Topping:</strong>
-  <%= @order.topping %>
+  <%= @order.customisation_display(:topping) %>
 </p>
 
 

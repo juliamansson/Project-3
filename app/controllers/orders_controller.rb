@@ -71,6 +71,10 @@ class OrdersController < ApplicationController
     end
 
     def order_params
-      params.require(:order).permit(:user_id, :status, :price, :quantity, :date, :base, :frosting, :topping)
+      params.require(:order).permit(:user_id, :status, :price, :quantity, :date,
+      { customisations_attributes: [ :flavour_id, :section_id ] }
+      )
+
+
     end
 end
