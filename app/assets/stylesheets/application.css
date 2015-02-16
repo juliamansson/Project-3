@@ -14,8 +14,18 @@
  *= require_self
  */
 
- 
 
+ @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+ body, p {
+  font-family: Poiret One;
+  font-size: 20px;
+ }
+
+ 
+ img.imagePreview {
+  display: none;
+ }
 
 
 

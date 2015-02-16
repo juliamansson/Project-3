@@ -24,9 +24,16 @@
         <!-- <h3 class="fs-subtitle">Step 1 of 3</h3> -->
         
         <%#= i.object.section.try :name %>
-        <%= i.label :flavour_id %>
+        <%#= i.label :flavour_id %>
         <%= i.hidden_field :section_id %>  
-        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name  %>
+        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name %>
+        <% i.object.section.flavours.each do |flavour| %>
+          <%= image_tag flavour.image_name, id: "image_preview_#{flavour.id}", class: 'imagePreview' %>
+
+
+        <% end %>
+
+      <br>
 
         <% if i.object.section.name != "Base" %>
           <input type="button" name="previous" class="previous action-button" value="Previous" />

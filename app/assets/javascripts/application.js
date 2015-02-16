@@ -95,21 +95,17 @@ $(".submit").click(function(){
   return false;
 })
 
+
+
+
+  $('select').change( function() {
+     var src = $(this).val();
+     console.log(src); 
+     $(".imagePreview").hide();
+     $("#image_preview_" + src).show();
+  });
+
 });
-
-
-
-
-// $(function(){
-
-//   $('input[type=radio]').change( function() {
-//      var src = $(this).val();
-//      console.log(src); 
-//      $("#imagePreview").html("<img src='/assets/" + src + ".png'>");
-
-//   });
-
-// });
 
 
 

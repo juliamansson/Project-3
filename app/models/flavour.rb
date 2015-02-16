@@ -9,4 +9,10 @@ class Flavour < ActiveRecord::Base
   
   validates :name, uniqueness: { scope: :section_id }
 
+
+
+  def image_name
+    @@images ||= %w(45.png 46.png 47.jpeg 48.jpg 49.jpeg)
+    @@images.pop
+  end
 end
