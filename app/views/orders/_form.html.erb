@@ -29,6 +29,8 @@
         <div class="collection_select">
         <%= i.hidden_field :section_id %>  
         <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name %>
+        <br>
+        <br>
         <% i.object.section.flavours.each do |flavour| %>
           <%= image_tag flavour.image_name, id: "image_preview_#{flavour.id}", class: 'imagePreview' %>
         <% end %>

@@ -26,6 +26,8 @@
  
  img.imagePreview {
   display: none;
+  width: 300px;
+  height: auto;
  }
 
  .login {
@@ -35,12 +37,12 @@
  }
 
  #main_title {
-  background: url("/assets/header_image.jpg");
-  background-size: 100% auto;
-  background-position: 90% 90%;
+  background: url("/assets/butterfly-vanilla-vanillabase.png");
+  /*background-size: 100% auto;*/
+  background-position: 30% 30%;
   width: 100%;
   height: 150px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 
   font-size: 100px;
   padding: 20px;

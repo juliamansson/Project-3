@@ -11,23 +11,16 @@ Order.delete_all
 
 
 flavours = Flavour.create!([
-  {name: 'Chocolate', section_id: 1}, 
-  {name: 'Vanilla', section_id: 1}, 
-  {name: 'Red Velvet', section_id: 1},
-  {name: 'Banana', section_id: 1},
-  {name: 'Carrot', section_id: 1},
+  {name: 'Chocolate', section_id: 1, image_name: "chocolate-base.png"}, 
+  {name: 'Vanilla', section_id: 1, image_name: "vanilla-base.png"}, 
+  {name: 'Red Velvet', section_id: 1, image_name: "redvelvet-base.png"},
 
-  {name: 'Vanilla', section_id: 2}, 
   {name: 'Chocolate', section_id: 2}, 
-  {name: 'Oreo', section_id: 2},
-  {name: 'Cream Cheese', section_id: 2},
-  {name: 'Peanut Butter', section_id: 2},
+  {name: 'Cream Cheese', section_id: 2, image_name: "vanilla-vanillabase.png"},
 
-
-  {name: 'Sprinkles', section_id: 3}, 
   {name: 'Oreos', section_id: 3}, 
-  {name: 'Banana', section_id: 3}, 
-  {name: 'Chocolate Chips', section_id: 3},
-  {name: 'None', section_id: 3},  
+  {name: 'Butterflies', section_id: 3, image_name: "butterfly-vanilla-vanillabase.png"}, 
+  {name: 'Popcorn', section_id: 3},
+ 
   
   ])
