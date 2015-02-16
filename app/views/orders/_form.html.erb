@@ -28,7 +28,7 @@
         <%#= i.label :flavour_id %>
         <div class="collection_select">
         <%= i.hidden_field :section_id %>  
-        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name %>
+        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name, {disabled: 'Vanilla' } %>
         <br>
         <br>
         <% i.object.section.flavours.each do |flavour| %>
