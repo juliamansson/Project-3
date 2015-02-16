@@ -99,10 +99,28 @@ $(".submit").click(function(){
 
 
   $('select').change( function() {
-     var src = $(this).val();
-     console.log(src); 
-     $(".imagePreview").hide();
-     $("#image_preview_" + src).show();
+    var base_flavour_id = $('#base_flavour_id').val();
+    var topping_flavour_id = $('#topping_flavour_id').val();
+    var frosting_flavour_id = $('#frosting_flavour_id').val();
+
+    var image_name_array = [];
+
+    if (topping_flavour_id) {
+      image_name_array.push(topping_flavour_id);
+    }
+    if (frosting_flavour_id) {
+      image_name_array.push(frosting_flavour_id);
+    }
+    if (base_flavour_id) {
+      image_name_array.push(base_flavour_id);
+    }
+
+    var image_preview_id = '#image_preview_' + image_name_array.join('_');
+
+    var image_preview_src = $(image_preview_id).attr('src');
+
+    $(".imagePreview").attr('src', image_preview_src);
+    $(".imagePreview").show();
   });
 
 });

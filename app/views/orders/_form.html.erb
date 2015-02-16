@@ -1,3 +1,18 @@
+<% Flavour.base.each do |base| %>
+  <% base_image_name = "#{base.image_name}.png" %>
+  <%= image_tag base_image_name, id: "image_preview_#{base.id}", class: 'preload' %>
+
+  <% Flavour.frosting.each do |frosting| %>
+    <% frosting_image_name = "#{frosting.image_name}-#{base_image_name}" %>
+    <%= image_tag frosting_image_name, id: "image_preview_#{frosting.id}_#{base.id}", class: 'preload' %>
+
+    <% Flavour.topping.each do |topping| %>
+      <% topping_image_name = "#{topping.image_name}-#{frosting.image_name}-#{base_image_name}" %>
+      <%= image_tag topping_image_name, id: "image_preview_#{topping.id}_#{frosting.id}_#{base.id}", class: 'preload' %>
+    <% end %>
+  <% end %>
+<% end %>
+
 <%= form_for@order, :html=> {:id => 'msform'} do |f| %>
   <% if @order.errors.any? %>
     <div id="error_explanation">
@@ -28,13 +43,10 @@
         <%#= i.label :flavour_id %>
         <div class="collection_select">
         <%= i.hidden_field :section_id %>  
-        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name, {disabled: 'Vanilla' } %>
-        <br>
-        <br>
-        <% i.object.section.flavours.each do |flavour| %>
-          <%= image_tag flavour.image_name, id: "image_preview_#{flavour.id}", class: 'imagePreview' %>
-        <% end %>
+        <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name, {prompt: true}, { id: "#{i.object.section.try(:name).downcase}_flavour_id" } %>
         </div>
+
+        <%= image_tag '', class: 'imagePreview' %>
 
       <br>
 
