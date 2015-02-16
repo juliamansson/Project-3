@@ -34,7 +34,9 @@ html {
  
  box-sizing: border-box;
  width: 80%;
- margin: 0 10%;
+ margin-bottom: 150px;
+ margin-right: 10%;
+ margin-left: 10%;
  
  /*stacking fieldsets above each other*/
  position: absolute;
@@ -51,7 +53,7 @@ html {
  margin-bottom: 10px;
  width: 100%;
  box-sizing: border-box;
- font-family: Poirot One;
+ // font-family: Poiret One;
  color: #2C3E50;
  font-size: 13px;
 }
@@ -59,9 +61,11 @@ html {
 #msform .action-button {
  width: 100px;
  background: deeppink;
+ font-family: Poiret One;
  font-weight: bold;
  color: white;
  border: 0 none;
+ font-size: 15px;
  border-radius: 3px;
  cursor: pointer;
  padding: 10px 5px;
@@ -77,12 +81,7 @@ html {
  color: deeppink;
  margin-bottom: 10px;
 }
-.fs-subtitle {
- font-weight: normal;
- font-size: 13px;
- color: #666;
- margin-bottom: 20px;
-}
+
 /*progressbar*/
 #progressbar {
  margin-bottom: 30px;
@@ -92,9 +91,9 @@ html {
 }
 #progressbar li {
  list-style-type: none;
- color: deeppink;
+ color: #FF69B4;
  text-transform: uppercase;
- font-size: 9px;
+ font-size: 13px;
  width: 33.33%;
  float: left;
  position: relative;
@@ -102,13 +101,13 @@ html {
 #progressbar li:before {
  content: counter(step);
  counter-increment: step;
- width: 20px;
- line-height: 20px;
+ width: 30px;
+ line-height: 30px;
  display: block;
  border-radius: 100%;
- font-size: 10px;
- color: deeppink;
- background: white;
+ font-size: 12px;
+ color: gray;
+
  margin: 0 auto 5px auto;
 }
 /*progressbar connectors*/
@@ -133,6 +132,22 @@ html {
  color: white;
 }
 
+
+#orders_new_title {
+  text-align: center;
+  // margin-bottom: 10px;
+  font-size: 50px;
+  padding: 10px;
+  color: #FF00AA;
+}
+
+
+
+.collection_select select{
+  font-size: 150%;
+  font-family: Poiret One;
+  color: gray;
+}
 
 
 
