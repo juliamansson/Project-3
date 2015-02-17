@@ -17,9 +17,20 @@
 
  @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
+ 
+
  body, p {
   font-family: Poiret One;
   font-size: 20px;
+
+ }
+
+ #content {
+  width: 600px;
+  background: rgba(255, 228, 225, 0.5);
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 30px 20px;
  }
 
  .image-container {
@@ -68,7 +79,11 @@
  }*/
 
  #main_title {
-  background: url("/assets/IMG_7465.JPG") no-repeat center center fixed;
+  background: pink;
+  margin: 0;
+  color: white;
+
+  /*background: url("/assets/IMG_7465.JPG") no-repeat center center;*/
   background-size: 100%;
   background-position: 170% 150%;
   font-size: 100px;
