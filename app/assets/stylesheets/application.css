@@ -17,33 +17,30 @@
 
  @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
- 
 
  body, p {
   font-family: Poiret One;
   font-size: 20px;
+}
 
- }
-
- #content {
-
+#content {
   width: 800px;
   background: rgba(255, 228, 225, 0.5);
   margin: 30px auto;
   border-radius: 5px;
   padding: 30px 20px;
- }
+}
 
- .image-container {
+.image-container {
   display: none;
   width: 200px;
   height: 300px;
   overflow: hidden;
   margin: 20px auto;
   position: relative;
- }
+}
 
- img.imagePreview {
+img.imagePreview {
   max-height: 100%;
   max-width: 100%;
   width: auto;
@@ -54,49 +51,47 @@
   left: 0;
   right: 0;
   margin: auto;
- }
+}
 
-  img.preload {
-    display: none;
-  }
+img.preload {
+  display: none;
+}
 
- .login {
+.login {
   text-align: right;
   padding: 10px;
   color: grey;
- }
-/*
- .image_size {
-  height: 300px;
-  position: relative;
- }
+}
 
- .image_size img {
-  position: absolute;
-  right: 90px;
- 
-
-  bottom: 0;
- }*/
-
- nav {
+nav {
   background: pink;
   margin: 0;
   color: white;
   padding: 20px;
- }
+  line-height: 55px;
+}
 
- nav h1, .login {
+nav h1 {
+  font-size: 55px;
+}
+
+nav h1, .login{
   display: inline;
- }
+}
 
- nav .login {
+nav .login {
   float: right;
- }
+}
 
 nav a {
   text-decoration: none;
   color: white;
+}
+
+nav img {
+  width: 45px;
+  padding-left: 10px;
+
 }
 
 nav a:hover {
@@ -107,25 +102,28 @@ nav a:hover {
   margin-top: 50px;
 }
 
- #design_link a {
+#design_link a {
   background: deeppink;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
   color: white;
- }
+}
 
- #design_link img {
+#design_link img, a {
+  display: inline;
+}
+
+#design_link img {
   width: 50px;
   bottom: 0;
- }
+}
 
 
 ul.cupcake_show {
   padding: 20px;
   list-style-type: none;
 }
-
 
 .show_cupcake_label {
   color: gray;
