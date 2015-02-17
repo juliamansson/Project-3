@@ -120,7 +120,8 @@ $(".submit").click(function(){
     var image_preview_src = $(image_preview_id).attr('src');
 
     $(".imagePreview").attr('src', image_preview_src);
-    $(".imagePreview").show();
+    // $(".imagePreview").show();
+    $(".image-container").show();
   });
 
 });

@@ -20,7 +20,7 @@ flavours = Flavour.create!([
 
   {name: 'Oreos', section_id: 3, image_name: 'oreo'}, 
   {name: 'Butterflies', section_id: 3, image_name: "butterfly"}, 
-  {name: 'Caramel Popcorn', section_id: 3, image_name: ''},
+  {name: 'Caramel Popcorn', section_id: 3, image_name: 'popcorn'},
  
   
   ])
