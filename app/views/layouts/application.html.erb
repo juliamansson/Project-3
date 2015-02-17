@@ -11,11 +11,13 @@
 
   <nav>
 
-    <h1 id="main_title"><a href="/">PROJECT 3<%=  image_tag("butterfly-creamcheese-vanillabase.png") %></a></h1>
+    <h1 id="main_title"><a href="/">PROJECT 3</a></h1>
 
-   
-
-    <div class='login'>
+    <ul>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Orders</li>
+      <li> <div class='login'>
         <% if user_signed_in? %>
         <%= current_user.email %>
         <%= link_to "Log out", destroy_user_session_path, method: :delete %>
@@ -24,7 +26,12 @@
           <%= link_to "Sign In", new_user_session_path %>
           <%= link_to "Register", new_user_registration_path %>
         <% end %>
-      </div>
+      </div></li>
+
+    </ul>
+   
+
+   
     
   </nav>
 

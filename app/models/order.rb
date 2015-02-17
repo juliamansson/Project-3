@@ -12,10 +12,10 @@ class Order < ActiveRecord::Base
     customisations.send(section_name).map { |customisation| customisation.flavour.name }.to_sentence
   end
 
-  def image_name_for(section, flavour)
-    base      = section.name == 'Base'      ? flavour.image_name : customisations.base.first.try(:image_name)
-    topping   = section.name == 'Topping'   ? flavour.image_name : customisations.topping.first.try(:image_name)
-    frosting  = section.name == 'Frosting'  ? flavour.image_name : customisations.frosting.first.try(:image_name)
+  def image_name
+    base      = customisations.base.first.flavour.try(:image_name)
+    topping   = customisations.topping.first.flavour.try(:image_name)
+    frosting  = customisations.frosting.first.flavour.try(:image_name)
 
     [topping, frosting, base].delete_if(&:blank?).join('-') << '.png'
   end

@@ -21,14 +21,17 @@
  body, p {
   font-family: Poiret One;
   font-size: 20px;
+ 
+
 }
 
 #content {
-  width: 800px;
-  background: rgba(255, 228, 225, 0.5);
+  width: 50%;
+  background: #FFF0F5;
   margin: 20px;
   border-radius: 5px;
   padding: 30px 20px;
+  color: grey;
 }
 
 .image-container {
@@ -64,15 +67,15 @@ img.preload {
 }
 
 nav {
-  background: pink;
+  background: #ff87c3;
   margin: 0;
   color: white;
-  padding: 30px;
-  line-height: 55px;
+  padding: 20px 40px;
+  line-height: 40px;
 }
 
 nav h1 {
-  font-size: 55px;
+  font-size: 45px;
 }
 
 nav h1, .login{
@@ -86,6 +89,21 @@ nav .login {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+
+nav ul li{
+  display: inline;
+  padding: 30px;
+}
+
+nav ul li:hover {
+  color: deeppink;
 }
 
 nav img {
@@ -103,7 +121,7 @@ nav a:hover {
 }
 
 #design_link a {
-  background: deeppink;
+  background: #FF69B4;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -129,11 +147,24 @@ ul.cupcake_show {
   color: gray;
 }
 
+.triple_popcorn {
+  margin: 0 auto;
+}
+.triple_popcorn img{
+  width: 80px;
+}
+
 #hidden_form {
   display: none;
 }
 
+aside {
+  float: right;
+}
 
+aside img {
+
+}
 
 #steps_images p {
   display: inline;
@@ -141,29 +172,26 @@ ul.cupcake_show {
 
 
 #steps_images img {
-  width: 100px;
+  width: 70px;
   padding: 20px 20px;
 }
 
-
-
-/*aside {
-  float: right;
-}
-
-aside img{
-  width: 100px;
-}
-
-aside ul {
-  list-style-type: none;
+#home_icon {
+  width: 70px;
 }
 
 aside {
-  margin-right: 200px;
-  margin-top: 0;
+  float: right;
+
 }
-*/
+
+aside img{
+  width: 500px;
+  bottom: 500px; 
+
+}
+
+
 
 
 
