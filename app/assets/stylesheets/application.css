@@ -94,6 +94,21 @@
  }
 
 
+ul.cupcake_show {
+  padding: 20px;
+  list-style-type: none;
+}
+
+
+.show_cupcake_label {
+  color: gray;
+}
+
+#hidden_form {
+  display: none;
+}
+
+
 
 
 

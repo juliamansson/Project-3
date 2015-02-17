@@ -1,24 +1,23 @@
 
 <h2>Your Cupcake</h2>
-<p>
-  <strong>Base:</strong>
-  <%= @order.customisation_display(:base) %>
+<ul class="cupcake_show">
+  <li>
+    <div class="show_cupcake_label">Base:</div>
+    <%= @order.customisation_display(:base) %>
+  </li>
+  <li>
+    <div class="show_cupcake_label">Frosting:</div>
+    <%= @order.customisation_display(:frosting) %>
+  </li>
+  <li>
+    <div class="show_cupcake_label">Topping:</div>
+    <%= @order.customisation_display(:topping) %>
+  </li>
+</ul>
 
-  <%#= @invoice.user.address.full_address.join(', ') %>
-</p>
+  <div id="hidden_form">
+  <%= render 'order_form'%>
+  </div>
+  
 
-<p>
-  <strong>Frosting:</strong>
-  <%= @order.customisation_display(:frosting) %>
-</p>
-
-<p>
-  <strong>Topping:</strong>
-  <%= @order.customisation_display(:topping) %>
-</p>
-
-
-
-
-
-<button>Order!</button>
+<button id="order_button">Order!</button>

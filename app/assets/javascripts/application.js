@@ -124,6 +124,14 @@ $(".submit").click(function(){
     $(".image-container").show();
   });
 
+
+
+
+  $('#order_button').click( function() {
+    $('#hidden_form').show();
+
+  })
+
 });
 
 
