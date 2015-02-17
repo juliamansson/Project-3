@@ -143,20 +143,83 @@ html {
  border: 2px solid deeppink;
 }
 
-
 #orders_new_title {
   text-align: center;
   font-size: 50px;
   color: #FF00AA;
 }
 
-
-
 .collection_select select{
   // font-size: 150%;
   font-family: Poiret One;
   color: gray;
 }
+
+#cupcake_show img{
+  width: 100px; 
+}
+
+ul.cupcake_show {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+#order_button {
+  background: deeppink;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+#order_button:hover {
+  cursor: pointer;
+}
+
+.content_order {
+  float: left;
+  width: 30%;
+  background: #FFF0F5;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+.content_order img {
+  float: right;
+}
+
+
+#image_cupcake {
+  width: 150px
+}
+
+// @-webkit-keyframes rotate {
+
+//   from {
+//     -webkit-transform: perspective(1000px) rotateY(0deg);
+//     -webkit-backface-visibility: visible;
+//     -webkit-perspective: 300px;
+//     -webkit-transform-style: preserve-3d;
+//   }
+//   to { 
+//     -webkit-transform: perspective(1000px) rotateY(360deg);
+//     -webkit-backface-visibility: visible;
+//     -webkit-perspective: 300px;
+//     -webkit-transform-style: preserve-3d;
+//   }
+// }
+
+// .content_order img
+// {
+//     -webkit-animation-name:             rotate;
+//     perspective: 300px;
+//       transform-style: preserve-3d;
+
+//     -webkit-animation-duration:         20s; 
+//     -webkit-animation-iteration-count:  infinite;
+//     -webkit-animation-timing-function: linear;
+// }
 
 
 

@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-canvas-sparkles.js
+//= require jquery-canvas-sparkles.min.js
+
 //= require_tree .
 
 
@@ -131,6 +134,28 @@ $(".submit").click(function(){
     $('#hidden_form').show();
 
   })
+
+
+
+
+  $("#image").imagesLoaded( function() {
+  $(".cupcake_show").sparkle({
+
+    color: "#FFFFFF",
+    count: 30,
+    overlap: 0,
+    speed: 1,
+    minSize: 4,
+    maxSize: 7,
+    direction: "both"
+  });
+});
+
+
+   
+
+
+
 
 });
 

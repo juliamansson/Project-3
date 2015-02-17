@@ -1,22 +1,35 @@
-
+<div class="content_order">
 <h2>Your Cupcake</h2>
+
 <ul class="cupcake_show">
   <li>
-    <div class="show_cupcake_label">Base:</div>
+    Base:
     <%= @order.customisation_display(:base) %>
   </li>
   <li>
-    <div class="show_cupcake_label">Frosting:</div>
+    Frosting:
     <%= @order.customisation_display(:frosting) %>
   </li>
   <li>
-    <div class="show_cupcake_label">Topping:</div>
+    Topping:
     <%= @order.customisation_display(:topping) %>
   </li>
 </ul>
 
 
-<%= image_tag @order.image_name %>
+
+<%= image_tag @order.image_name, id: :image_cupcake %>
+
+
+<a id="order_button">Order!</a>
+
+</div>
+
+
+
+
+
+
 
 
 
@@ -27,4 +40,3 @@
   </div>
   
 
-<button id="order_button">Order!</button>

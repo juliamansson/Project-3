@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project3</title>
+  <title>Cupcake</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -28,29 +28,31 @@
   <%#= image_tag("butterfly-creamcheese-vanillabase.png") %>
   </div> -->
 
-  <div id="content">
+  <div class="content">
 
-  <h1>Project 3</h1>
+  <h1>Cupcake</h1>
 
 
 
   
 
-  <p>Project 3 is a virtual cupcake customising website.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsum dolor voluptatum beatae, voluptatibus unde sapiente excepturi. Cum, doloribus, blanditiis! Dolores sapiente alias ea soluta itaque eius, officia, iste corrupti.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus rerum, laudantium ut in dolorem nam, atque iste fugit asperiores, delectus repudiandae blanditiis perspiciatis distinctio est possimus officiis autem suscipit quae!</p>
+  <p>Project 3 is a virtual cupcake customising website!</p>
+  <p>Simply pick your favour cake, frosting and topping to build your own perfect cupcake. Once you're happy with your design, you can order it.</p>
+
+  <p>Enjoy!</p>
 
   <div id="steps_images">
     <p>Step 1</p>
     <%= image_tag("vanillabase.png") %>
     <p>Step 2</p>
     <%= image_tag("chocolate-vanillabase.png") %>
-    <p>Step 2</p>
+    <p>Step 3</p>
     <%= image_tag("oreo-chocolate-vanillabase.png") %>
+    <p>Step 4</p>
   </div>
 
   <div id="design_link">
-  <%=  link_to "Start designing a cupcake!", new_order_path %>
+  <%=  link_to "Start designing a cupcake", new_order_path %>
   </div>
 
 

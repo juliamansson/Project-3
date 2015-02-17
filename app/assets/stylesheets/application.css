@@ -21,17 +21,27 @@
  body, p {
   font-family: Poiret One;
   font-size: 20px;
- 
+  background: url("IMG_7464.JPG") no-repeat center center fixed;
+  background-size: cover;
 
 }
 
-#content {
-  width: 50%;
+
+
+
+.content {
+  width: 60%;
   background: #FFF0F5;
   margin: 20px;
   border-radius: 5px;
   padding: 30px 20px;
   color: grey;
+}
+
+#content p {
+  padding: 10px;
+  background: #FFF0F5;
+
 }
 
 .image-container {
@@ -138,32 +148,19 @@ nav a:hover {
 }
 
 
-ul.cupcake_show {
-  padding: 20px;
-  list-style-type: none;
-}
-
-.show_cupcake_label {
-  color: gray;
-}
-
-.triple_popcorn {
-  margin: 0 auto;
-}
-.triple_popcorn img{
-  width: 80px;
-}
 
 #hidden_form {
   display: none;
-}
-
-aside {
   float: right;
-}
-
-aside img {
-
+  width: 40%;
+  background: #FFF0F5;
+  margin: 20px;
+  border-radius: 5px;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: grey;
 }
 
 #steps_images p {
@@ -180,16 +177,7 @@ aside img {
   width: 70px;
 }
 
-aside {
-  float: right;
 
-}
-
-aside img{
-  width: 500px;
-  bottom: 500px; 
-
-}
 
 
 
