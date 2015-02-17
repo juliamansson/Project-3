@@ -9,21 +9,31 @@
 </head>
 <body>
 
-  <h1 id="main_title">PROJECT 3</h1>
+  <nav>
+
+    <h1 id="main_title">PROJECT 3</h1>
+
+   
+
+    <div class='login'>
+        <% if user_signed_in? %>
+        <%= current_user.email %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+
+        <% else %>
+          <%= link_to "Sign In", new_user_session_path %>
+          <%= link_to "Register", new_user_registration_path %>
+        <% end %>
+      </div>
+    
+  </nav>
+
+  
 
 
   <!-- <img src="http://allaboutuarts.ca/wp-content/uploads/2012/07/placeholder_2.jpg" alt="image placeholder"> -->
 
-  <div class='login'>
-      <% if user_signed_in? %>
-      <%= current_user.email %>
-      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path %>
-        <%= link_to "Register", new_user_registration_path %>
-      <% end %>
-    </div>
+ 
 
   
 
