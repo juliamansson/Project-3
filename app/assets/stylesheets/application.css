@@ -21,27 +21,25 @@
  body, p {
   font-family: Poiret One;
   font-size: 20px;
-  background: url("IMG_7464.JPG") no-repeat center center fixed;
+  background: url("IMG_7325.JPG") no-repeat center center fixed;
   background-size: cover;
 
 }
 
-
-
-
 .content {
   width: 60%;
-  background: #FFF0F5;
+  background: rgba(255,240,245, 0.8);
   margin: 20px;
   border-radius: 5px;
   padding: 30px 20px;
   color: grey;
+  box-shadow: 0 0 15px 1px rgba(255, 20, 147, 0.4);
+
 }
 
-#content p {
+.content p {
   padding: 10px;
-  background: #FFF0F5;
-
+  background: rgba(255,240,245, 0.2);
 }
 
 .image-container {
@@ -70,9 +68,15 @@ img.preload {
   display: none;
 }
 
+#main_title {
+  float: left;
+  width: 25%;
+  font-size: 45px;
+}
+
 .login {
-  text-align: right;
-  padding: 10px;
+  width: 20%;
+  float: right;
   color: grey;
 }
 
@@ -84,37 +88,25 @@ nav {
   line-height: 40px;
 }
 
-nav h1 {
-  font-size: 45px;
+nav ul {
+  width: 50%;
+  float: left;
+  list-style-type: none;
 }
 
-nav h1, .login{
-  display: inline;
-}
-
-nav .login {
-  float: right;
+nav ul li{
+  float: left;
+  padding: 0 30px;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-  padding: 30px;
 }
 
-nav ul {
-  list-style-type: none;
-  float: right;
-}
-
-nav ul li{
-  display: inline;
-  padding: 30px;
-}
-
-nav ul li:hover {
+/*nav ul li:hover {
   color: deeppink;
-}
+}*/
 
 nav img {
   width: 45px;
@@ -154,7 +146,7 @@ nav a:hover {
   float: right;
   width: 40%;
   background: #FFF0F5;
-  margin: 20px;
+  margin: 15px;
   border-radius: 5px;
   padding-top: 0;
   padding-left: 20px;
@@ -163,9 +155,16 @@ nav a:hover {
   color: grey;
 }
 
-#steps_images p {
-  display: inline;
+#steps_images figure{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
 }
+
+/*#steps_images figcaption{
+  
+}*/
+
 
 
 #steps_images img {
@@ -179,7 +178,23 @@ nav a:hover {
 
 
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 
 
 

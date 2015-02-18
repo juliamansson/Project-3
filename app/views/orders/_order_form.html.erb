@@ -20,7 +20,35 @@
   <%= f.label "Please select quantity (minimum 4)" %>
   <br>
   <%= f.select :quantity, (4..20) %>
-  
+  <br>
+  <br>
+  <%= f.label :name %>
+  <br>
+  <%= text_field_tag(:name) %>
+  <br>
+  <%= f.label :address_line_1 %>
+  <br>
+  <%= text_field_tag(:address_line_1) %>
+  <br>
+  <%= f.label :address_line_2 %>
+  <br>
+  <%= text_field_tag(:address_line_2) %>
+  <br>
+  <%= f.label :city %>
+  <br>
+  <%= text_field_tag(:city) %>
+  <br>
+  <%= f.label :post_code %>
+  <br>
+  <%= text_field_tag(:post_code) %>
+  <br>
+
+<br>
+<br>
+
+  <a id="continue_button">Continue</a>
+
+
 
 
 

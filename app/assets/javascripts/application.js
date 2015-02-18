@@ -133,13 +133,16 @@ $(".submit").click(function(){
   $('#order_button').click( function() {
     $('#hidden_form').show();
 
+  });
+
+  $('#continue_button').click( function() {
+    $('#hidden_form').show();
+
   })
 
 
 
-
-  $("#image").imagesLoaded( function() {
-  $(".cupcake_show").sparkle({
+  $("#order_button").sparkle({
 
     color: "#FFFFFF",
     count: 30,
@@ -149,7 +152,7 @@ $(".submit").click(function(){
     maxSize: 7,
     direction: "both"
   });
-});
+
 
 
    
