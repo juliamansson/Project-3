@@ -146,11 +146,24 @@ ul.cupcake_show {
   padding: 10px 20px;
   border-radius: 3px;
   color: white;
+  width: 50%;
   display: block;
   margin-top: 20px;
   text-align: center;
 }
 
+
+.row-1 {
+  clear: both;
+}
+
+.row-1, .row-2 {
+  width: 100%;
+}
+
+.row-2 {
+  float: left;
+}
 
 .order_back {
   text-decoration: none;
