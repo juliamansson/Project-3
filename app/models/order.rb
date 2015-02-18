@@ -6,6 +6,12 @@ class Order < ActiveRecord::Base
   accepts_nested_attributes_for :customisations,allow_destroy: true
   delegate :section, :flavour, to: :customisation, prefix: true, allow_nil: true
 
+  validates :name, :presence => true, :on => :update
+  validates :address_line_1, :presence => true, :on => :update
+  validates :address_line_2, :presence => true, :on => :update
+  validates :city, :presence => true, :on => :update
+  validates :post_code, :presence => true, :on => :update
+
 
 
   def customisation_display(section_name)

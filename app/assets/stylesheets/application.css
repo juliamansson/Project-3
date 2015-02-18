@@ -305,9 +305,48 @@ aside img {
   color: grey;
  }
 
+ #order_index h1 {
+  color: deeppink;
+  padding: 20px;
+ }
+
+ #order_index table {
+  padding: 20px;
+ }
+
+ #order_index th {
+  color: pink;
+  font-size: 30px;
+  
+ }
+
  #order_index td img {
   width: 50px;
  }
+
+ #order_index a {
+  text-decoration: none;
+  font-size: 13px;
+ }
+
+ #order_index a:hover {
+  color: white;
+  background: pink;
+  /*padding: 2px;*/
+  border-radius: 3px;
+ }
+
+  .order_back {
+    text-decoration: none;
+    color: pink;
+    padding: 10px;
+    
+
+  }
+
+  .order_back:hover {
+    color: deeppink;
+  }
 
 
 
