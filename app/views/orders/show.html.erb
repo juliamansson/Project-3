@@ -1,7 +1,5 @@
 <nav class='cf'>
-
   <h1 id="main_title"><a href="/"></a></h1>
-
   <ul>
     <li><a href="/about">About</a></li>
     <li><a href="/contact">Contact</li></a>
@@ -12,84 +10,62 @@
     <%= current_user.email %>
     <%= link_to "Log out", destroy_user_session_path, method: :delete %>
     <% else %>
-      <%= link_to "Sign In", new_user_session_path %>
-      <%= link_to "Register", new_user_registration_path %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <%= link_to "Register", new_user_registration_path %>
     <% end %>
   </div>
-
- 
-  
 </nav>
+<div class="row-1 content_order">
+  <div class="col-50">
+    
+      <h2>Your Cupcake</h2>
+      <div class="cupcake_show_text">
+        <ul class="cupcake_show">
+          <li>
+            Base:
+            <%= @order.customisation_display(:base) %>
+          </li>
+          <li>
+            Frosting:
+            <%= @order.customisation_display(:frosting) %>
+          </li>
+          <li>
+            Topping:
+            <%= @order.customisation_display(:topping) %>
+          </li>
+          <% if @order.placed? %>
+          <li>
+            Quantity:
+            <%= @order.quantity %>
+          </li>
+          <li>
+            Name:
+            <%= @order.name %>
+          </li>
+          <li>
+            Address:
+            <%= @order.address %>
+          </li>
+        </ul>
+        <% end %>
 
-<div class="content_order">
-<h2>Your Cupcake</h2>
+        <% unless @order.placed? %>
+        <a class="order_button">Order!</a>
+        <% end %>
 
-<div class="cupcake_show_text">
-<ul class="cupcake_show">
-  <li>
-    Base:
-    <%= @order.customisation_display(:base) %>
-  </li>
-  <li>
-    Frosting:
-    <%= @order.customisation_display(:frosting) %>
-  </li>
-  <li>
-    Topping:
-    <%= @order.customisation_display(:topping) %>
-  </li>
-  
+        <a class="order_back" href="/">Home</a>
+        <a class="order_back" href="/orders">Your Orders</a>
+      </div>
+      
+    
+    </div>
 
-
-  <% if @order.placed? %>
-    <li>
-      Quantity:
-      <%= @order.quantity %>
-    </li>
-    <li>
-      Name:
-      <%= @order.name %>
-    </li>
-    <li>
-      Address:
-      <%= @order.address %>
-    </li>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <a class="order_back" href="/">Home</a>
-    <a class="order_back" href="/orders">Your Orders</a>
-
-  <% end %>
-
-</ul>
-</div>
-
-
-
-<%= image_tag @order.image_name, id: :image_cupcake %>
-
-<% unless @order.placed? %>
-  <a class="order_button">Order!</a>
-<% end %>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-  <div id="hidden_form">
-  <%= render 'order_form'%>
+    <div class="col-50">
+      <%= image_tag @order.image_name, id: :image_cupcake %>
+    </div>
+    
   </div>
-  
-
+</div>
+<div id="hidden_form">
+  <%= render 'order_form'%>
+</div>

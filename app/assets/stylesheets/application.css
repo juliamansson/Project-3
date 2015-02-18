@@ -137,19 +137,6 @@ nav a:hover {
   bottom: 0;
 }
 
-#hidden_form {
-  display: none;
-  float: right;
-  width: 40%;
-  background: #FFF0F5;
-  margin: 15px;
-  border-radius: 5px;
-  padding-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  color: grey;
-}
 
 #steps_images figure{
   display: inline-block;
@@ -317,6 +304,7 @@ aside img {
  #order_index th {
   color: pink;
   font-size: 30px;
+  padding: 10px;
   
  }
 
@@ -336,17 +324,7 @@ aside img {
   border-radius: 3px;
  }
 
-  .order_back {
-    text-decoration: none;
-    color: pink;
-    padding: 10px;
 
-
-  }
-
-  .order_back:hover {
-    color: deeppink;
-  }
 
   #error_explanation {
     color: red;
