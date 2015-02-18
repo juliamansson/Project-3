@@ -73,18 +73,13 @@ img.preload {
 
 #main_title {
   float: left;
-  width: 25%;
-  font-size: 45px;
+ 
 }
 
-.login {
-  width: 20%;
-  float: right;
-  color: grey;
-}
+
 
 nav {
-  background: #ff87c3;
+  /*background: pink;*/
   margin: 0;
   color: white;
   padding: 20px 40px;
@@ -97,24 +92,38 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li{
-  float: left;
-  padding: 0 30px;
+
+
+#logout_link {
+  float: right;
 }
 
 nav a {
+  height: 90px;
+  width: 90px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
   text-decoration: none;
   color: white;
+  border-spacing:5px;
 }
+
+.split_table {
+  display: table-cell;
+  width: 5%;
+}
+
+
 
 nav img {
   width: 45px;
   padding-left: 10px;
 }
 
-nav a:hover {
-  color: deeppink;
-}
+
 
 #design_link {
   margin-top: 50px;

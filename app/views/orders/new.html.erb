@@ -1,24 +1,19 @@
   <nav class='cf'>
 
-    <h1 id="main_title"><a href="/"></a></h1>
+  <a class="nav_links" href="/">Home</a>
 
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</li></a>
-      <li><a href="/orders">Orders</li></a>
-    </ul>
-    <div class='login'>
-      <%  if user_signed_in? %>
-      <%= current_user.email %>
-      <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path %>
-        <%= link_to "Register", new_user_registration_path %>
-      <% end %>
-    </div>
-
-   
-    
+  <div class="split_table"></div>
+  <a class="nav_links" href="/about">About</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/contact">Contact</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/orders">Orders</a>
+  <div class="split_table"></div>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: :nav_links%>
+  <!-- <a class="nav_links" href="/users/sign_out(.:format)">Sign Out</a> -->
+<!--   <%# else %>
+    <%#= link_to "Sign In", new_user_session_path %>
+    <%# end %> -->
   </nav>
 
 
