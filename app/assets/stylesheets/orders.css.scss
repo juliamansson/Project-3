@@ -184,6 +184,10 @@ ul.cupcake_show {
 }
 
 
+
+
+
+
  @-webkit-keyframes pulse_animation {
     0% { -webkit-transform: scale(1); }
     30% { -webkit-transform: scale(1); }
@@ -197,6 +201,14 @@ ul.cupcake_show {
 
 
 #main_cupcake img {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 9000ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+img#image_cupcake {
   -webkit-animation-name: 'pulse_animation';
   -webkit-animation-duration: 9000ms;
   -webkit-transform-origin:50% 50%;
