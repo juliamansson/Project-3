@@ -218,9 +218,39 @@ aside img {
 #main_cupcake #text {
   position: absolute;
   color: white;
-  left: 150px;
-  top: 350px;
+  
+  font-size: 50px;
+  left: 70px;
+  top: 300px;
   z-index: 100;
+}
+
+#linkie {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 300px;
+  top: -300px;
+}
+
+#linkie_about {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 920px;
+  top: -300px;
 }
 
 
