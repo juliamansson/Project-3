@@ -1,7 +1,8 @@
   <nav class='cf'>
 
   <a class="nav_links" href="/">Home</a>
-
+  <div class="split_table"></div>
+  <a class="nav_links" href="/orders/new">Design</a>
   <div class="split_table"></div>
   <a class="nav_links" href="/about">About</a>
   <div class="split_table"></div>
@@ -10,6 +11,9 @@
   <a class="nav_links" href="/orders">Orders</a>
   <div class="split_table"></div>
   <%= link_to "Log out", destroy_user_session_path, method: :delete, class: :nav_links%>
+
+  <p id="logo">Cupcake Me</p>
+
   <!-- <a class="nav_links" href="/users/sign_out(.:format)">Sign Out</a> -->
 <!--   <%# else %>
     <%#= link_to "Sign In", new_user_session_path %>
