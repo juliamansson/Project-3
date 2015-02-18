@@ -9,13 +9,13 @@ class Order < ActiveRecord::Base
 
 
   def customisation_display(section_name)
-    customisations.send(section_name).map { |customisation| customisation.flavour.name }.to_sentence
+    customisations.send(section_name).map { |customisation| customisation.flavour.try :name }.delete_if(&:blank?).to_sentence
   end
 
   def image_name
-    base      = customisations.base.first.flavour.try(:image_name)
-    topping   = customisations.topping.first.flavour.try(:image_name)
-    frosting  = customisations.frosting.first.flavour.try(:image_name)
+    base      = customisations.base.first.try(:flavour).try(:image_name)
+    topping   = customisations.topping.first.try(:flavour).try(:image_name)
+    frosting  = customisations.frosting.first.try(:flavour).try(:image_name)
 
     [topping, frosting, base].delete_if(&:blank?).join('-') << '.png'
   end

@@ -1,3 +1,4 @@
+
 <% Flavour.base.each do |base| %>
   <% base_image_name = "#{base.image_name}.png" %>
   <%= image_tag base_image_name, id: "image_preview_#{base.id}", class: 'preload' %>

@@ -136,6 +136,11 @@ $(".submit").click(function(){
   });
 
 
+  $('.continue_button').click( function() {
+      location.href = "/orders";
+  });
+
+
   $("#main_title").sparkle({
 
     color: "#FFFFFF",

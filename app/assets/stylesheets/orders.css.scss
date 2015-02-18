@@ -148,7 +148,15 @@ ul.cupcake_show {
   color: white;
 }
 
-.order_button:hover {
+.continue_button {
+  float: left;
+  background: deeppink;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+.order_button:hover, .continue_button:hover {
   cursor: pointer;
 }
 
@@ -173,32 +181,27 @@ ul.cupcake_show {
   margin-right: 20px 
 }
 
-// @-webkit-keyframes rotate {
 
-//   from {
-//     -webkit-transform: perspective(1000px) rotateY(0deg);
-//     -webkit-backface-visibility: visible;
-//     -webkit-perspective: 300px;
-//     -webkit-transform-style: preserve-3d;
-//   }
-//   to { 
-//     -webkit-transform: perspective(1000px) rotateY(360deg);
-//     -webkit-backface-visibility: visible;
-//     -webkit-perspective: 300px;
-//     -webkit-transform-style: preserve-3d;
-//   }
-// }
 
-// .content_order img
-// {
-//     -webkit-animation-name:             rotate;
-//     perspective: 300px;
-//       transform-style: preserve-3d;
+ @-webkit-keyframes pulse_animation {
+    0% { -webkit-transform: scale(1); }
+    30% { -webkit-transform: scale(1); }
+    40% { -webkit-transform: scale(1.08); }
+    50% { -webkit-transform: scale(1); }
+    60% { -webkit-transform: scale(1); }
+    70% { -webkit-transform: scale(1); }
+    80% { -webkit-transform: scale(1); }
+    100% { -webkit-transform: scale(1); }
+  }
 
-//     -webkit-animation-duration:         20s; 
-//     -webkit-animation-iteration-count:  infinite;
-//     -webkit-animation-timing-function: linear;
-// }
+
+#main_cupcake img {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 9000ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
 
 
 
