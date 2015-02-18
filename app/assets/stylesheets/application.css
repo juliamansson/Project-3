@@ -279,9 +279,18 @@ aside img {
   color: white;
   left: 730px;
   top: 100px;
-
 }
 
+#login_page {
+  text-align: center;
+  margin: 50px auto;
+  display: block;
+  width: 40%;
+  background: rgba(255,240,245, 0.8);
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
 
 
 
