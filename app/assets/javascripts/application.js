@@ -135,6 +135,9 @@ $(".submit").click(function(){
 
   });
 
+  if($('#error_explanation')[0]) {
+    $('#hidden_form').show();
+  }
 
   $('.continue_button').click( function() {
       location.href = "/orders";

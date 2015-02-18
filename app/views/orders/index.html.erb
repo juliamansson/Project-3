@@ -15,7 +15,6 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-       
         <td><%= image_tag order.image_name, id: :image_cupcake %></td>
         <td><%= order.quantity %></td>
 
@@ -31,5 +30,5 @@
 
 <br>
 
-<%= link_to 'New Order', new_order_path %>
+<%= link_to 'New Cupcake', new_order_path %>
 </div>

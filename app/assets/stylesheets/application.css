@@ -340,13 +340,29 @@ aside img {
     text-decoration: none;
     color: pink;
     padding: 10px;
-    
+
 
   }
 
   .order_back:hover {
     color: deeppink;
   }
+
+  #error_explanation {
+    color: red;
+    border: 1px solid red;
+    width: 300px;
+    padding: 10px;
+  }
+
+  #error_explanation h2 {
+    display: none;
+  }
+
+  #error_explanation ul {
+    list-style-type: none;
+  }
+
 
 
 

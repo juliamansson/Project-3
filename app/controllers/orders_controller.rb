@@ -58,8 +58,12 @@ class OrdersController < ApplicationController
   end
 
   def update
-    @order.update(order_params.merge(status: :placed))
-    respond_with(@order)
+    if @order.update(order_params)
+      @order.update_columns(status: :placed)
+      redirect_to @order
+    else
+      render :show
+    end
   end
 
   def destroy

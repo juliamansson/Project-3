@@ -15,13 +15,14 @@
     Topping:
     <%= @order.customisation_display(:topping) %>
   </li>
-  <li>
-    Quantity:
-    <%= @order.quantity %>
-  </li>
+  
 
 
   <% if @order.placed? %>
+    <li>
+      Quantity:
+      <%= @order.quantity %>
+    </li>
     <li>
       Name:
       <%= @order.name %>
