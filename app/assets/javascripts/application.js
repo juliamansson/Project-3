@@ -130,17 +130,33 @@ $(".submit").click(function(){
 
 
 
-  $('#order_button').click( function() {
+  $('.order_button').click( function() {
     $('#hidden_form').show();
 
   });
 
-  $('#continue_button').click( function() {
-    $('#hidden_form').show();
 
-  })
+  $("#main_title").sparkle({
 
+    color: "#FFFFFF",
+    count: 30,
+    overlap: 0,
+    speed: 1,
+    minSize: 4,
+    maxSize: 7,
+    direction: "both"
+  });
 
+  $("#design_link").sparkle({
+
+    color: "#FFFFFF",
+    count: 30,
+    overlap: 0,
+    speed: 1,
+    minSize: 4,
+    maxSize: 7,
+    direction: "both"
+  });
 
   $("#order_button").sparkle({
 

@@ -21,19 +21,19 @@
  body, p {
   font-family: Poiret One;
   font-size: 20px;
-  background: url("IMG_7325.JPG") no-repeat center center fixed;
-  background-size: cover;
+  /*background: url("IMG_7325.JPG") no-repeat center center fixed;*/
+  /*background-size: cover;*/
 
 }
 
 .content {
-  width: 60%;
+  width: 50%;
   background: rgba(255,240,245, 0.8);
   margin: 20px;
   border-radius: 5px;
   padding: 30px 20px;
   color: grey;
-  box-shadow: 0 0 15px 1px rgba(255, 20, 147, 0.4);
+  /*box-shadow: 0 0 15px 1px rgba(255, 20, 147, 0.4);*/
 
 }
 
@@ -104,14 +104,9 @@ nav a {
   color: white;
 }
 
-/*nav ul li:hover {
-  color: deeppink;
-}*/
-
 nav img {
   width: 45px;
   padding-left: 10px;
-
 }
 
 nav a:hover {
@@ -139,8 +134,6 @@ nav a:hover {
   bottom: 0;
 }
 
-
-
 #hidden_form {
   display: none;
   float: right;
@@ -161,12 +154,6 @@ nav a:hover {
   text-align: center;
 }
 
-/*#steps_images figcaption{
-  
-}*/
-
-
-
 #steps_images img {
   width: 70px;
   padding: 20px 20px;
@@ -175,8 +162,6 @@ nav a:hover {
 #home_icon {
   width: 70px;
 }
-
-
 
 .cf:before,
 .cf:after {
