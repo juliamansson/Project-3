@@ -16,9 +16,9 @@
 
   <%=  link_to("Design a cupcake", new_order_path, id: "linkie") %>
 
-  <%= link_to("About", new_order_path, id:"linkie_about") %>
+  <%= link_to("About", about_path, id:"linkie_about") %>
 
-  <%= link_to("Contact", new_order_path, id:"linkie_contact") %>
+  <%= link_to("Contact", contact_path, id:"linkie_contact") %>
 
   <% if user_signed_in? %>
   <%= link_to("Sign out", destroy_user_session_path, method: :delete, id:"linkie_signin") %>
