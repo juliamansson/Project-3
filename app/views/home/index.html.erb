@@ -8,38 +8,56 @@
 </head>
 <body>
 
+  <div id="main_cupcake">
+  <%= image_tag("chocolate-vanillabase.png", id: "image") %>
+  <h2 id="text">Hello</h2>
+  </div>
+
+
+
+
+
+<!-- 
+
   <div class="content">
-    <h1>Cupcake</h1>
+    <h1>Design a Cupcake</h1>
     <p>Project 3 is a virtual cupcake customising website!</p>
     <p>Simply pick your favour cake, frosting and topping to build your own perfect cupcake. Once you're happy with your design, you can order it.</p>
     <p>Enjoy!</p>
 
     <div id="steps_images">
       <figure>
-        <%= image_tag("vanillabase.png") %>
+        <%#= image_tag("vanillabase.png") %>
         <figcaption>Step 1</figcaption>
       </figure>
       <figure>
-        <%= image_tag("chocolate-vanillabase.png") %>
+        <%#= image_tag("chocolate-vanillabase.png") %>
         <figcaption>Step 2</figcaption>
       </figure>
       <figure>
-        <%= image_tag("oreo-chocolate-vanillabase.png") %>
+        <%#= image_tag("oreo-chocolate-vanillabase.png") %>
         <figcaption>Step 3</figcaption>
       </figure>
     </div>
 
     <div id="design_link">
-      <%=  link_to "Start designing a cupcake", new_order_path %>
+      <%#=  link_to "Start designing a cupcake", new_order_path %>
     </div>
 
 
-    <%= yield %>
-
-
-
-
+    
   </div>
+
+
+  <aside>
+    <h3>Previous Cupcake Creations</h3>
+    
+    <%#= image_tag("oreo-chocolate-vanillabase.png") %>
+   
+    
+
+  </aside> -->
+  <%= yield %>
 
 </body>
 </html>

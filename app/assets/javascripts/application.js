@@ -158,7 +158,7 @@ $(".submit").click(function(){
     direction: "both"
   });
 
-  $("#order_button").sparkle({
+  $(".order_button").sparkle({
 
     color: "#FFFFFF",
     count: 30,

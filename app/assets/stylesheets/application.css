@@ -21,18 +21,21 @@
  body, p {
   font-family: Poiret One;
   font-size: 20px;
-  /*background: url("IMG_7325.JPG") no-repeat center center fixed;*/
-  /*background-size: cover;*/
+  
 
 }
 
 .content {
+  float: left;
   width: 50%;
   background: rgba(255,240,245, 0.8);
   margin: 20px;
   border-radius: 5px;
   padding: 30px 20px;
   color: grey;
+  /*background: url("IMG_7325.JPG") no-repeat center center fixed;
+  background-size: cover;
+  background-position: 40% 40%;*/
   /*box-shadow: 0 0 15px 1px rgba(255, 20, 147, 0.4);*/
 
 }
@@ -163,6 +166,20 @@ nav a:hover {
   width: 70px;
 }
 
+aside {
+  float: right;
+  width: 35%;
+  background: rgba(255,240,245, 0.8);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+aside img {
+  width: 100px;
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -179,6 +196,31 @@ nav a:hover {
  */
 .cf {
     *zoom: 1;
+}
+
+#main_cupcake {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#main_cupcake #image {
+  position: absolute;
+  left: 0;
+  top: 0;
+ /* margin: 0 auto;
+  display: block;
+  width: 500px;
+  position: relative;*/
+}
+
+#main_cupcake #text {
+  position: absolute;
+  color: white;
+  left: 150px;
+  top: 350px;
+  z-index: 100;
 }
 
 
