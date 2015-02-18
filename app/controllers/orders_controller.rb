@@ -58,7 +58,7 @@ class OrdersController < ApplicationController
   end
 
   def update
-    @order.update(order_params)
+    @order.update(order_params.merge(status: :placed))
     respond_with(@order)
   end
 
@@ -73,7 +73,7 @@ class OrdersController < ApplicationController
     end
 
     def order_params
-      params.require(:order).permit(:user_id, :status, :price, :quantity, :date,
+      params.require(:order).permit(:user_id, :status, :price, :quantity, :date, :name, :address_line_1, :address_line_2, :city, :post_code,
       { customisations_attributes: [ :flavour_id, :section_id ] }
       )
 

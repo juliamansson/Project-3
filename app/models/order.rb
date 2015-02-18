@@ -4,8 +4,8 @@ class Order < ActiveRecord::Base
   has_many :customisations
 
   accepts_nested_attributes_for :customisations,allow_destroy: true
-
   delegate :section, :flavour, to: :customisation, prefix: true, allow_nil: true
+
 
 
   def customisation_display(section_name)
@@ -20,6 +20,13 @@ class Order < ActiveRecord::Base
     [topping, frosting, base].delete_if(&:blank?).join('-') << '.png'
   end
 
+  def address
+    [address_line_1, address_line_2, city, post_code].delete_if(&:blank?).join(', ')
+  end
+
+  def placed?
+    status.to_s == 'placed'
+  end
 
   # def order_section
   #   customisations.try(:section).try(:name)

@@ -17,8 +17,21 @@
   </li>
   <li>
     Quantity:
-    
+    <%= @order.quantity %>
   </li>
+
+
+  <% if @order.placed? %>
+    <li>
+      Name:
+      <%= @order.name %>
+    </li>
+    <li>
+      Address:
+      <%= @order.address %>
+    </li>
+  <% end %>
+
 </ul>
 </div>
 
@@ -26,9 +39,9 @@
 
 <%= image_tag @order.image_name, id: :image_cupcake %>
 
-
-<a class="order_button">Order!</a>
-
+<% unless @order.placed? %>
+  <a class="order_button">Order!</a>
+<% end %>
 </div>
 
 
