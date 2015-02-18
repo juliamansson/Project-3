@@ -174,6 +174,17 @@ $(".submit").click(function(){
     direction: "both"
   });
 
+  $(".continue_button").sparkle({
+
+    color: "#FFFFFF",
+    count: 30,
+    overlap: 0,
+    speed: 1,
+    minSize: 4,
+    maxSize: 7,
+    direction: "both"
+  });
+
 
   $("#linkie_about").sparkle({
 
