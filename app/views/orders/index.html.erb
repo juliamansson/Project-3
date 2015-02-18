@@ -36,8 +36,11 @@
       <tr>
         <td><%= image_tag order.image_name, id: :image_cupcake %></td>
         <td><%= order.quantity %></td>
-
-        <td><%= order.placed? %></td>
+        <% if order.placed?  %>
+        <td>Purchased</td>
+        <% else %>
+        <td>Not Ordered</td>
+        <% end %>
 
         <td><%= link_to 'Show', order %></td>
 
