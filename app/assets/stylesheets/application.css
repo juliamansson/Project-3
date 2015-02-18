@@ -303,7 +303,10 @@ aside img {
   border-radius: 5px;
   padding: 30px 20px;
   color: grey;
+ }
 
+ #order_index td img {
+  width: 50px;
  }
 
 
