@@ -37,10 +37,6 @@
       <h2 class="fs-title">Choose a cake <%=i.object.section.try :name %></h2>
       <br>
 
-      <!-- <h3 class="fs-subtitle">Step 1 of 3</h3> -->
-
-      <%#= i.object.section.try :name %>
-      <%#= i.label :flavour_id %>
       <div class="collection_select">
         <%= i.hidden_field :section_id %>  
         <%= i.collection_select :flavour_id, i.object.section.flavours, :id, :name, {prompt: true}, { id: "#{i.object.section.try(:name).downcase}_flavour_id" } %>
@@ -62,7 +58,6 @@
         <input type="button" name="next" class="next action-button" value="Next" />
       <% end %>
     </fieldset>
-
   <% end %>
 
 <% end %>
