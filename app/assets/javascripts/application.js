@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require jquery-canvas-sparkles.js
 //= require jquery-canvas-sparkles.min.js
-
+//= require jquery.easing.min.js
 //= require_tree .
 
 
