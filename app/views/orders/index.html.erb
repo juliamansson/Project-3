@@ -22,7 +22,7 @@
     <tr>
     
       <th>Cupcake</th>
-      <th>Quantity</th>
+      <th>Quantity Ordered</th>
       <th>Status</th>
       
       <th colspan="4"></th>
@@ -33,14 +33,20 @@
     <% @orders.each do |order| %>
       <tr>
         <td><%= image_tag order.image_name, id: :image_cupcake %></td>
+        <% if order.placed?  %>
         <td><%= order.quantity %></td>
+        <% else %>
+        <td>N/A</td>
+        <% end %>
+
+        
         <% if order.placed?  %>
         <td>Purchased</td>
         <% else %>
         <td>Not Ordered</td>
         <% end %>
 
-        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'View', order %></td>
 
         <!-- <td><%#= link_to 'Edit', edit_order_path(order) %></td> -->
         

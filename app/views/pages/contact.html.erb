@@ -1,1 +1,32 @@
-contact.html.erb
+  <nav class='cf'>
+
+  <a class="nav_links" href="/">Home</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/orders/new">Design</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/about">About</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/contact">Contact</a>
+  <div class="split_table"></div>
+  <a class="nav_links" href="/orders">Orders</a>
+  <div class="split_table"></div>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: :nav_links%>
+ 
+    <p id="logo">Cupcake Me</p>
+  </nav>
+
+<div class="about_page">
+<h1>Contact</h1>
+<br>
+
+<p>email: julia@cupcake.com</p>
+<p>phone: 07760666775</p>
+
+<br>
+<br>
+<p>Please do not hesitate to contact me for any special requests or large orders</p>
+
+</div>
+
+
+<%= image_tag "IMG_7444.JPG", id: :about_image %>
