@@ -1,0 +1,690 @@
+/*custom font*/
+/*basic reset*/
+/* line 15, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+html {
+  height: 100%;
+}
+
+/*form styles*/
+/* line 23, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#msform {
+  width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+/* line 29, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#msform fieldset {
+  background: #FFF0F5;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(255, 20, 147, 0.4);
+  padding: 70px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin-bottom: 150px;
+  margin-right: 10%;
+  margin-left: 10%;
+  position: absolute;
+}
+
+/* line 44, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+/* line 48, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#msform .action-button {
+  width: 100px;
+  background: deeppink;
+  font-family: Poiret One;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+/* line 61, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px deeppink;
+}
+
+/*headings*/
+/* line 65, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.fs-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: deeppink;
+}
+
+/*progressbar*/
+/* line 73, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  width: 420px;
+  margin: 20px auto;
+}
+
+/* line 82, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#progressbar li {
+  list-style-type: none;
+  color: #FF69B4;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 100px;
+  height: 150px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  margin: 0 20px;
+}
+
+/* line 95, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 96px;
+  line-height: 96px;
+  display: block;
+  font-size: 12px;
+  color: white;
+  background: url("/assets/chocolate-vanillabase.png") no-repeat center center;
+  background-size: 70% auto;
+  border-radius: 100%;
+}
+
+/* line 108, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#progressbar li:first-child:after {
+  content: none;
+}
+
+/* line 112, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#progressbar li.active:before, #progressbar li.active:after {
+  border: 2px solid deeppink;
+}
+
+/* line 116, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#orders_new_title {
+  text-align: center;
+  font-size: 50px;
+  color: #FF00AA;
+  padding-top: 50px;
+}
+
+/* line 123, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.collection_select select {
+  font-family: Poiret One;
+  color: gray;
+}
+
+/* line 129, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.cupcake_show_text {
+  float: left;
+}
+
+/* line 133, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+ul.cupcake_show {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+/* line 139, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#image_cupcake {
+  float: left;
+  width: 200px;
+  margin-right: 30px;
+}
+
+/* line 145, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.order_button {
+  background: deeppink;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+  width: 50%;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 157, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.row-1 {
+  clear: both;
+}
+
+/* line 161, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.row-1, .row-2 {
+  width: 100%;
+}
+
+/* line 165, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.row-2 {
+  float: left;
+}
+
+/* line 169, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.order_back {
+  text-decoration: none;
+  color: pink;
+  padding: 10px;
+}
+
+/* line 175, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.order_back:hover {
+  color: deeppink;
+}
+
+/* line 179, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.continue_button {
+  float: left;
+  background: deeppink;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+}
+
+/* line 187, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.order_button:hover, .continue_button:hover {
+  cursor: pointer;
+}
+
+/* line 191, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.content_order {
+  float: left;
+  width: 40%;
+  background: #FFF0F5;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+/* line 201, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.content_order h2 {
+  color: deeppink;
+}
+
+/* line 206, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#hidden_form {
+  display: none;
+  float: left;
+  width: 40%;
+  background: #FFF0F5;
+  margin: 15px;
+  border-radius: 5px;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: grey;
+}
+
+/* line 220, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#hidden_form h3 {
+  color: deeppink;
+}
+
+/* line 224, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#new_cupcake a {
+  text-decoration: none;
+  background: deeppink;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+  text-align: center;
+}
+
+/* line 237, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+@-webkit-keyframes pulse_animation {
+  /* line 245, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 246, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  30% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 247, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  40% {
+    -webkit-transform: scale(1.08);
+  }
+
+  /* line 248, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  50% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 249, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  60% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 250, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  70% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 251, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  80% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 252, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+/* line 256, /Users/juliamansson1/wdi/Project3/project_3/app/assets/stylesheets/orders.css.scss */
+#main_cupcake img {
+  -webkit-animation-name: 'pulse_animation';
+  -webkit-animation-duration: 9000ms;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+
+ @import url(http://fonts.googleapis.com/css?family=Poiret+One);
+ @import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+
+ body, p {
+  font-family: Poiret One;
+  font-size: 20px;
+}
+
+.content {
+  float: left;
+  width: 50%;
+  background: rgba(255,240,245, 0.8);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+.content p {
+  padding: 10px;
+  background: rgba(255,240,245, 0.2);
+}
+
+.image-container {
+  display: none;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+}
+
+img.imagePreview {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+img.preload {
+  display: none;
+}
+
+#main_title {
+  float: left;
+}
+
+nav {
+  margin: 0;
+  color: white;
+  padding: 20px 40px;
+  line-height: 40px;
+  background: rgba(255,240,245, 0.2)
+}
+
+nav ul {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+}
+
+#logout_link {
+  float: right;
+}
+
+nav a {
+  height: 60px;
+  width: 60px;
+  display: table-cell;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  border-spacing:5px;
+  font-size: 15px;
+  float: left;
+}
+
+#logo {
+  float: right;
+  color: deeppink;
+  font-family: Satisfy;
+  font-size: 35px;
+  padding-top: 13px;
+}
+
+#logo, #logo img {
+  display: inline;
+}
+
+.split_table {
+  display: table-cell;
+  width: 5%;
+}
+
+nav img {
+  width: 45px;
+  padding-left: 10px;
+}
+
+#design_link {
+  margin-top: 50px;
+}
+
+#design_link a {
+  background: #FF69B4;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+#design_link img, a {
+  display: inline;
+}
+
+#design_link img {
+  width: 40px;
+  bottom: 0;
+}
+
+
+#steps_images figure{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+#steps_images img {
+  width: 72px;
+  padding: 20px 20px;
+}
+
+#home_icon {
+  width: 70px;
+}
+
+aside {
+  float: right;
+  width: 35%;
+  background: rgba(255,240,245, 0.8);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+aside img {
+  width: 100px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+#main_cupcake {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#main_cupcake #image {
+  position: absolute;
+  left: 0;
+  top: 0;
+ /* margin: 0 auto;
+  display: block;
+  width: 500px;
+  position: relative;*/
+}
+
+#main_cupcake #text {
+  position: absolute;
+  color: white;
+  font-family: Satisfy;
+  font-size: 60px;
+  left: 75px;
+  top: 200px;
+  z-index: 100;
+  font-weight: bold;
+}
+
+#linkie {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 300px;
+  top: -300px;
+}
+
+#linkie_about {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 930px;
+  top: -300px;
+}
+
+#linkie_contact {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 100px;
+  top: 100px;
+}
+
+#linkie_signin {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; /* may require vendor prefixes */
+  background: pink;
+  text-decoration: none;
+  color: white;
+  left: 730px;
+  top: 100px;
+}
+
+#login_page {
+  text-align: center;
+  margin: 50px auto;
+  display: block;
+  width: 40%;
+  background: rgba(255,240,245, 0.8);
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+}
+
+
+
+ #order_index {
+  text-align: center;
+  margin: 50px auto;
+  display: block;
+  width: 40%;
+  background: rgba(255,240,245, 0.8);
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+ }
+
+ #order_index h1 {
+  color: deeppink;
+  padding: 20px;
+ }
+
+ #order_index table {
+  padding: 20px;
+ }
+
+ #order_index th {
+  color: pink;
+  font-size: 30px;
+  padding: 10px;
+ }
+
+ #order_index td img {
+  width: 50px;
+ }
+
+ #order_index td {
+  padding: 20px;
+ }
+
+ #order_index a {
+  text-decoration: none;
+  font-size: 13px;
+ }
+
+ #order_index a:hover {
+  color: white;
+  background: pink;
+  /*padding: 2px;*/
+  border-radius: 3px;
+ }
+
+ .about_page {
+  float: left;
+  width: 40%;
+  background: #FFF0F5;
+  margin: 15px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  color: grey;
+ }
+
+.about_page h1 {
+  color: deeppink;
+  
+}
+
+#about_image {
+  width: 753px;
+  float: left;
+  margin: 15px;
+  border-radius: 5px;
+
+}
+
+  #error_explanation {
+    color: red;
+    border: 1px solid red;
+    width: 300px;
+    padding: 10px;
+  }
+
+  #error_explanation h2 {
+    display: none;
+  }
+
+  #error_explanation ul {
+    list-style-type: none;
+  }
+
+
+
+
