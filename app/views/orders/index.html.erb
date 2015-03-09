@@ -20,11 +20,9 @@
 <table>
   <thead>
     <tr>
-    
       <th>Cupcake</th>
       <th>Quantity Ordered</th>
       <th>Status</th>
-      
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -38,7 +36,6 @@
         <% else %>
         <td>N/A</td>
         <% end %>
-
         
         <% if order.placed?  %>
         <td>Purchased</td>
@@ -48,8 +45,6 @@
 
         <td><%= link_to 'View', order %></td>
 
-        <!-- <td><%#= link_to 'Edit', edit_order_path(order) %></td> -->
-        
         <td><%= link_to 'Remove', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

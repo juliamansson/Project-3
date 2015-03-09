@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <div id="home_page">
   <a href="orders/new">
   <div id="main_cupcake">
   <%= image_tag("popcorn-creamcheese-vanillabase.png", class: "image") %>
@@ -27,6 +28,7 @@
   <% else %>
   <%= link_to("Sign In", new_user_session_path, id:"linkie_signin") %>
   <% end %>
+  </div>
 
 
 

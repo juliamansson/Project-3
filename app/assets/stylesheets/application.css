@@ -223,12 +223,13 @@ aside img {
 }
 
 #linkie {
+  position: relative;
   height: 100px;
   width: 100px;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 50%; /* may require vendor prefixes */
+  border-radius: 50%;
   background: pink;
   text-decoration: none;
   color: white;
@@ -242,7 +243,7 @@ aside img {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 50%; /* may require vendor prefixes */
+  border-radius: 50%;
   background: pink;
   text-decoration: none;
   color: white;
@@ -256,7 +257,7 @@ aside img {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 50%; /* may require vendor prefixes */
+  border-radius: 50%; 
   background: pink;
   text-decoration: none;
   color: white;
@@ -270,7 +271,7 @@ aside img {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  border-radius: 50%; /* may require vendor prefixes */
+  border-radius: 50%;
   background: pink;
   text-decoration: none;
   color: white;
@@ -278,7 +279,20 @@ aside img {
   top: 100px;
 }
 
-#login_page {
+@media only screen 
+and (max-device-width: 480px) {
+  #main_cupcake #text {
+    width: 100px;
+  }
+  #main_cupcake #text {
+    font-size: 10px;
+  }
+
+}
+
+
+
+#login_page, #register_page {
   text-align: center;
   margin: 50px auto;
   display: block;

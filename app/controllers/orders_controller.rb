@@ -15,10 +15,6 @@ class OrdersController < ApplicationController
   end
 
   def new
-    # session[:order_params] ||= {}
-    # @order = Order.new(session[:order_params])
-    # @order.current_step = session[:order_step]
-
     @order = Order.new
     Section.all.each do |section|
       @order.customisations.new(section: section)

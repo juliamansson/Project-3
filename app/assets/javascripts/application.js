@@ -17,13 +17,11 @@
 
 
 $(function(){
-//jQuery time
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
+var current_fs, next_fs, previous_fs; 
+var left, opacity, scale; 
+var animating;
 
 $(".next").click(function(){
-
 
   if ($('#base_flavour_id').val() != ""){
     console.log("ok");
@@ -33,13 +31,12 @@ $(".next").click(function(){
     
     current_fs = $(this).parent();
     next_fs = $(this).parent().next();
-    
-    //activate next step on progressbar using the index of next_fs
+   
     $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
     
-    //show the next fieldset
+   
     next_fs.show(); 
-    //hide the current fieldset with style
+   
     current_fs.animate({opacity: 0}, {
       step: function(now, mx) {
         //as the opacity of current_fs reduces to 0 - stored in "now"
@@ -248,18 +245,6 @@ $(".submit").click(function(){
     maxSize: 7,
     direction: "both"
   });
-
-
-
-
-
-
-
-   
-
-
-
-
 });
 
 
@@ -267,8 +252,8 @@ $(".submit").click(function(){
 
 
 
-        
-    // });
+
+
 
 
 
