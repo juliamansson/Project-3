@@ -59,15 +59,12 @@ $(".next").click(function(){
     });
 
   }
+
   else
   {
     alert("Please select a flavour");
   }
 
-
-
-
- 
 });
 
 $(".previous").click(function(){

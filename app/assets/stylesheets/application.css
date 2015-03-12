@@ -279,18 +279,14 @@ aside img {
   top: 100px;
 }
 
-@media only screen 
-and (max-device-width: 480px) {
-  #main_cupcake #text {
-    width: 100px;
-  }
-  #main_cupcake #text {
-    font-size: 10px;
-  }
 
+
+
+
+.notice, .alert {
+  text-align: center;
+  padding-top: 30px;
 }
-
-
 
 #login_page, #register_page {
   text-align: center;
@@ -303,6 +299,10 @@ and (max-device-width: 480px) {
   color: grey;
 }
 
+#disclaimer {
+  font-size: 12px;
+  color: gray;
+}
 
 
  #order_index {
@@ -390,5 +390,6 @@ and (max-device-width: 480px) {
   }
 
 
+ 
 
 
